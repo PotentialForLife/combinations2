@@ -239,7 +239,7 @@ function keyUp(e){
 				control.Growing = true;
 				control.HoldingGrow = false;
 			} 
-			if (player.image == playerpickingleftimg || playe.image == playerpickingrightimg){
+			if (player.image == playerpickingleftimg || player.image == playerpickingrightimg){
 			if (player.dir == "right"){player.image = playeridlerightimg;}else{player.image = playeridleleftimg;}
 			}
 			if(player.inControl == true)map[X_FLAG][Y_FLAG].color = 'grey';

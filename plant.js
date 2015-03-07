@@ -113,7 +113,9 @@ Plant.prototype.lvlUp = function(){
 		default:
 			this.growthPoints += this.numRoots;
 	}
-	
+	globalwin = 0;
+	this.stem.tile.spreadair(X_FLAG,Y_FLAG+2,0);
+	console.log(globalwin);
 	var extraExp = this.exp - this.expMax;
 	this.expMax = Math.floor(this.expMax * 1.05);
 	this.exp = extraExp;
@@ -152,3 +154,6 @@ function growPlant(){
 			growTiles.splice(numTile, 1);
 	}
 }
+
+
+

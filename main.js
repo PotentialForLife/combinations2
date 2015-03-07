@@ -16,6 +16,8 @@ var w = $("#canvas").width();
 var h = $("#canvas").height();
 var cw = 20;
 
+var globalwin = 0;
+
 //load sounds
 var plantRustle = new Audio("PlantRustle.wav");
 var button = new Audio("Button Click.wav");
